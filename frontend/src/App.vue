@@ -37,7 +37,7 @@ const submit = async () => {
 
   const result = FormSchema.safeParse({
     email: email.value,
-    number: numberUnmasked.value || null,
+    number: numberUnmasked.value,
   });
 
   if (!result.success || result.error != null) {
